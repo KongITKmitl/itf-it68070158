@@ -1,21 +1,29 @@
+/* ส่วน navbar */
 nav {
     background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
+/* body reset */
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* ส่วนโปรไฟล์ */
 .profile {
     padding: 30px;
     display: flex;
     align-items: center;
     gap: 15px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
+/* ส่วน history log */
 .history {
     width: 80%;
     margin: 20px auto;
@@ -25,38 +33,70 @@ textarea {
     width: 100%;
     resize: none;
     font-family: monospace;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+/* ส่วน container */
 .container {
     display: flex;
-    justify-content: center;
-    margin: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
 }
 
-.account-overview, .financial-tools {
-    width: 35%;
-    padding: 70px;
-    
+/* ให้สองฝั่งเท่ากัน */
+.account-overview,
+.financial-tools {
+    flex: 1; /* กินพื้นที่เท่ากัน */
+    padding: 20px;
+    border: 1px ;
+    border-radius: 10px;
 }
 
+/* ปุ่ม */
 button {
     margin-top: 5px;
-    padding: 5px 5px;
-    cursor: pointer;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background: rgb(116, 116, 116);
 }
 
-.info-section {
+/* Info sections */
+.info-section,
+.info-section2,
+.info-section3 {
     display: flex;
     align-items: flex-start;
     gap: 15px;
     margin-bottom: 10px;
 }
 
-.icon {
+/* ไอคอน */
+.icon,
+.info-section2 img {
     width: 70px;
     height: 70px;
 }
 
-.info-section div {
+.info-section div,
+.info-section2 div,
+.info-section3 div {
     flex: 1;
+}
+
+.info-section2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-section2 input {
+    width: 100%;
+    margin: 5px 0 10px;
+    padding: 5px;
 }
