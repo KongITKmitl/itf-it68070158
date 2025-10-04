@@ -30,12 +30,12 @@ textarea {
 .container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 .account-overview, .financial-tools {
     width: 35%;
-    padding: 20px;
+    padding: 70px;
     
 }
 
