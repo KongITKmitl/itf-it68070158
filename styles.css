@@ -8,3 +8,9 @@ nav {
 body {
     margin: 0;
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
