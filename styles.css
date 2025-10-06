@@ -1,29 +1,30 @@
-/* ส่วน navbar */
 nav {
     background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    border-bottom: 2px solid #009688;
+    color: #000;
+    font-weight: bold;
 }
 
-/* body reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
 }
 
-/* ส่วนโปรไฟล์ */
 .profile {
     padding: 30px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
+    gap: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
 }
 
-/* ส่วน history log */
 .history {
     width: 80%;
     margin: 20px auto;
@@ -34,9 +35,11 @@ textarea {
     resize: none;
     font-family: monospace;
     padding: 10px;
+    border: 1px solid #009688;
+    border-radius: 5px;
+    background-color: #e0f7fa;
 }
 
-/* ส่วน container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -45,37 +48,41 @@ textarea {
     margin: 20px;
 }
 
-/* ให้สองฝั่งเท่ากัน */
 .account-overview,
 .financial-tools {
-    flex: 1; /* กินพื้นที่เท่ากัน */
+    flex: 1;
     padding: 20px;
-    border: 1px ;
     border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* ปุ่ม */
 button {
     margin-top: 5px;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
-}
-button:hover {
-    background: rgb(116, 116, 116);
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* Info sections */
+button:hover {
+    background-color: #00796b;
+}
+
 .info-section,
 .info-section2,
 .info-section3 {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
 }
 
-/* ไอคอน */
 .icon,
 .info-section2 img {
     width: 70px;
@@ -96,4 +103,14 @@ button:hover {
 
 .info-section2 input {
     width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select, input[type="number"], input[type="text"] {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #009688;
+    margin-top: 5px;
 }
